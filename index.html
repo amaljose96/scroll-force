@@ -1,0 +1,134 @@
+<html>
+  <head>
+    <title>ScrollForce.JS</title>
+    <script src='jquery.js'></script>
+    <script src='scroll-force.js'></script>
+  </head>
+  <style>
+    @font-face {
+        font-family: "new";
+        src: url(font.ttf);
+    }
+    body{
+      font-family: 'new';
+      font-weight: 100;
+    }
+      #text{
+        text-overflow: clip;
+        box-sizing: border-box;
+        text-align:center;
+        position:fixed;
+        top:calc(50% - 2em);
+        left:600px;
+        font-size:4em;
+        z-index: 2;
+      }
+      #moon{
+        position: fixed;
+        top:100px;
+        right:100px;
+        border-radius: 50%;
+        height:100px;
+        width:100px;
+        background-color: #fff;
+      }
+      #day_land{
+        position: fixed;
+        height: 150%;
+        width: 100%;
+        top:50%;
+        left:-50%;
+        background-color: #000;
+        border-radius: 50%;
+      }
+      #night_land{
+        position: fixed;
+        height: 150%;
+        width: 100%;
+        top:50%;
+        left:50%;
+        background-color: #fff;
+        border-radius: 50%;
+      }
+      #info{
+        position: fixed;
+        bottom: 45%;
+        left:50%;
+        width: 50%;
+        font-size: 2em;
+        opacity:0;
+      }
+      #copyright{
+        display: none;
+        font-size: 1.4em;
+        width:100%;
+        position: fixed;
+        bottom: 0px;
+        text-align: center;
+      }
+  </style>
+  <script>
+    $(document).ready(function(){
+        addrule("#text","style",'opacity',0,1,"","value",0,200);
+        addrule("#text","style",'left',600,800,"px","value",200,550);
+        addrule("#text","style",'opacity',1,0,"","value",400,550);
+        addrule("#text","style",'top',50,400,"px","value",000,600);
+        addrule("body","color",'background-color',{r:256,g:256,b:256},{r:0,g:0,b:0},"rgb","value",600,1200);
+        addrule("#text","color",'color',{r:0,g:0,b:0},{r:256,g:256,b:256},"rgb","value",400,800);
+        addrule("#text","style",'opacity',0,1,"","value",800,1200);
+        addrule("#text","style",'top',400,300,"px","value",800,801);
+        addrule("#text","style",'left',400,200,"px","value",800,1400);
+        addrule("#text","style",'opacity',1,0,"","value",1400,1600);
+        addrule("#day_land","style",'opacity',1,0,"","value",1400,1600);
+        addrule("#night_land","style",'opacity',1,0,"","value",1400,1600);
+        addrule("#moon","style",'opacity',1,0,"","value",1400,1600);
+        addrule("#text","style",'opacity',1,0,"","value",1600,1600);
+        addrule("body","color",'background-color',{r:0,g:0,b:0},{r:255,g:0,b:0},"rgb","value",1600,1620);
+        addrule("body","color",'background-color',{r:256,g:0,b:0},{r:255,g:255,b:0},"rgb","value",1620,1640);
+        addrule("body","color",'background-color',{r:256,g:256,b:0},{r:0,g:255,b:255},"rgb","value",1640,1660);
+        addrule("body","color",'background-color',{r:0,g:256,b:256},{r:0,g:0,b:255},"rgb","value",1660,1680);
+        addrule("body","color",'background-color',{r:0,g:0,b:256},{r:0,g:0,b:0},"rgb","value",1680,1700);
+        addtrigger(function(){
+            $("#text").html("And night");
+        },"down","value",900);
+        addtrigger(function(){
+            $("#text").html("Day");
+        },"up","value",800);
+        addtrigger(function(){
+            $("#text").html("May the force be with you.");
+        },"down","value",2000);
+        addtrigger(function(){
+            $("#text").html("And night");
+        },"up","value",1800);
+        addrule("#text","style",'left',200,100,"px","value",2000,2080);
+        addrule("#text","style",'top',300,200,"px","value",2100,2600);
+        addrule("#text","style",'opacity',0,1,"","value",2000,2200);
+        addrule("#text","style",'opacity',1,0,"","value",2400,2800);
+        addrule("body","color","background-color","#000","#fff","hex","value",2600,2800);
+        addtrigger(function(){
+          $("#text").html("Scroll - force . JS").css("color","#000");
+          $("#copyright").fadeIn();
+        },"down","value",3100);
+        addtrigger(function(){
+          $("#text").html("May the force be with you.").css("color","#fff");
+          $("#copyright").fadeOut();
+        },"up","value",2900);
+        addrule("#text","style",'opacity',0,1,"","value",3200,3400);
+        addrule("#info","style",'font-size',1,2,"em","value",3200,3400);
+        addrule("#info","style",'opacity',0,1,"","value",3200,3400);
+        addrule("#text","style",'left',100,200,"","value",3200,3400);
+        addrule("#text","style",'top',200,150,"","value",3200,3400);
+    });
+  </script>
+  <body>
+      <div id='text'>Day</div>
+      <div id='moon'></div>
+      <div id='day_land'></div>
+      <div id='night_land'></div>
+      <div id='info'>
+          <li><a href='useme.html'>How to use me?</a>
+          <li>View on GitHub
+      </div>
+      <div id='copyright'>By Amal Jose.</div>
+  </body>
+</html>
