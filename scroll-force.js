@@ -173,7 +173,7 @@ $(document).ready(function(){
   $("body").html("<div id='the_page' style='position:absolute;background:none;'>"+$("body").html()+"</div><div id='the-scroll' style='background:none;position:absolute;top:0;left:0;z-index:-4;width:100%;'></div>");
   setInterval(function(){
         scroll_manager();
-    },100);
+    },10);
   setInterval(function(){
           scroll_direction_determine();
   },100);

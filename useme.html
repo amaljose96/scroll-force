@@ -14,24 +14,116 @@
     font-weight: 100;
     padding: 20px;
   }
+  a{
+    text-decoration: none;
+    margin: 200px;
+    color:#000;
+  }
+  h1{
+    font-size: 3em;
+  }
+  h2{
+    margin-top: 20px;
+    font-size: 2em;
+    text-indent: 20px;
+  }
+  h3{
+    margin-top: 15px;
+    font-size: 1.5em;
+    text-indent: 30px;
+  }
+  h4{
+    margin-top: 10px;
+    font-size: 1.2em;
+    text-indent: 40px;
+  }
+  p{
+    font-size: 1em;
+    text-indent: 50px;
+  }
+  li{
+    margin-top: 20px;
+    margin-top: 10px;
+    text-indent: 70px;
+  }
+  pre{
+    background-color: rgba(250,250,250,0.8) ;
+    width: 80%;
+    margin-left:10%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
   </style>
   <script>
     $(document).ready(function(){
-        addrule("body","color","color",{r:0,g:0,b:0},{r:0,g:255,b:0},"rgb",'value',0,100);
-        addrule("body","color","color",{r:50,g:0,b:0},{r:0,g:255,b:0},"rgb",'value',0,100);
-        addrule("body","color","color",{r:50,g:50,b:0},{r:0,g:255,b:0},"rgb",'value',0,100);
-        addrule("body","color","color",{r:50,g:50,b:50},{r:0,g:255,b:0},"rgb",'value',0,100);
-        addrule("body","color","color",{r:255,g:0,b:0},{r:0,g:255,b:0},"rgb",'value',0,100);
-        addrule("body","color","color",{r:255,g:0,b:0},{r:0,g:255,b:0},"rgb",'value',0,100);
-        addrule("body","color","color",{r:255,g:0,b:0},{r:0,g:255,b:0},"rgb",'value',0,100);
-        addrule("body","color","color",{r:255,g:0,b:0},{r:0,g:255,b:0},"rgb",'value',0,100);
-        addrule("body","color","color",{r:255,g:0,b:0},{r:0,g:255,b:0},"rgb",'value',0,100);
+        addrule("body","color","color",{r:0,g:0,b:0},{r:150,g:0,b:0},"rgb",'value',0,100);
+        addrule("body","color","color",{r:150,g:0,b:0},{r:150,g:150,b:0},"rgb",'value',100,200);
+        addrule("body","color","color",{r:150,g:150,b:0},{r:150,g:150,b:150},"rgb",'value',200,300);
+        addrule("body","color","color",{r:150,g:150,b:150},{r:0,g:150,b:150},"rgb",'value',300,400);
+        addrule("body","color","color",{r:0,g:150,b:150},{r:0,g:0,b:150},"rgb",'value',400,1000);
+        addrule("body","color","color",{r:0,g:0,b:150},{r:200,g:0,b:0},"rgb",'value',1000,600);
+        addrule("body","color","color",{r:200,g:0,b:0},{r:200,g:200,b:0},"rgb",'value',600,700);
+        addrule("body","color","color",{r:200,g:200,b:0},{r:200,g:0,b:200},"rgb",'value',700,800);
+
+            addrule("body","color","background-color",{r:240,g:240,b:240},{r:250,g:240,b:240},"rgb",'value',0,100);
+            addrule("body","color","background-color",{r:250,g:240,b:240},{r:250,g:250,b:240},"rgb",'value',100,200);
+            addrule("body","color","background-color",{r:250,g:250,b:240},{r:250,g:250,b:250},"rgb",'value',200,300);
+            addrule("body","color","background-color",{r:250,g:250,b:250},{r:240,g:250,b:250},"rgb",'value',300,400);
+            addrule("body","color","background-color",{r:240,g:250,b:250},{r:240,g:240,b:250},"rgb",'value',400,1000);
+            addrule("body","color","background-color",{r:240,g:240,b:250},{r:260,g:240,b:240},"rgb",'value',1000,600);
+            addrule("body","color","background-color",{r:260,g:240,b:240},{r:260,g:260,b:240},"rgb",'value',600,700);
+            addrule("body","color","background-color",{r:260,g:260,b:230},{r:260,g:230,b:260},"rgb",'value',700,800);
+
+
+                addrule("pre","color","background-color",{r:200,g:200,b:200},{r:210,g:200,b:200},"rgb",'value',0,100);
+                addrule("pre","color","background-color",{r:210,g:200,b:200},{r:210,g:210,b:200},"rgb",'value',100,200);
+                addrule("pre","color","background-color",{r:210,g:210,b:200},{r:210,g:210,b:210},"rgb",'value',200,300);
+                addrule("pre","color","background-color",{r:210,g:210,b:210},{r:200,g:210,b:210},"rgb",'value',300,400);
+                addrule("pre","color","background-color",{r:200,g:210,b:210},{r:200,g:200,b:210},"rgb",'value',400,1000);
+                addrule("pre","color","background-color",{r:200,g:200,b:210},{r:240,g:200,b:200},"rgb",'value',1000,600);
+                addrule("pre","color","background-color",{r:240,g:200,b:200},{r:240,g:240,b:200},"rgb",'value',600,700);
+                addrule("pre","color","background-color",{r:240,g:240,b:200},{r:240,g:200,b:240},"rgb",'value',700,800);
     });
   </script>
   <body>
-    <h2>How to use the force?</h2>
-    <h3>Installing the Force</h3>
+    <a href='index.html'>Go back</a>
+    <h1>How to use the force?</h1>
+    <h2>Installing the Force</h2>
     <p>To use the Scroll Force, include the scroll-force.js file in your HTML code.</p>
     <pre>&lt;script src="scroll-force.js">&lt;/script></pre>
-    <h3>Using the Force</h3>
+    <p> For direct use,</p>
+    <pre>&lt;script src="https://amaljose96.github.io/scroll-force/scroll-force.js">&lt;/script></pre>
+    <h2>Using the Force</h2>
+    <p>To use the force, you need to add rules or triggers.</p>
+    <pre>addrule(&lt;item>,&lt;type>,&lt;property>,&lt;start_value>,&lt;end_value>,&lt;unit>,&lt;check_type>,&lt;check_start>,&lt;check_end>);</pre>
+    <h3>Item</h3>
+    <p> This field is filled with the entity to which the force is to be applied to. A jquery identifier is used here.</p>
+    <h3>Type</h3>
+    <p>As of the current version, there are 3 types.</p>
+      <li>Color:This is used incase the force you want to apply is on a color.eg. background-color.</li>
+      <li>Style:This is used for changing a value of CSS attribute. eg. padding, margins etc.</li>
+      <li>Attribute:This is used for changing an atrribute of that item</li>
+    <h3>Property</h3>
+    <p>This refers to the CSS attribute to be changed. For current version, except for colors, only numerical values are supported.</p>
+    <h3>Start Value,End value and Unit</h3>
+    <p>The start values, end values and unit for the property. </p>
+      <li>Color: This can either be a hex value or rgb. eg. "#deffce" or "#eff" or {r:100,g:200,b:124}. For Using hex values, the unit is "hex". For {r,g,b}, unit is "rgb". For {r,g,b,a}. the unit is "rgba".
+        <pre>addrule("body","color","background-color",{r:240,g:240,b:240},{r:250,g:240,b:240},"rgb",'value',0,100);</pre>
+      <li>Style: The start and end numbers are the start and end values. Unit can be "px", "em" or any other unit. If the property doesnt have a unit (eg. opacity), leave it as "".
+        <pre>addrule("#element","style","margin-top",10,100,"px",'value',0,100);</pre>
+      <li>Attribute: This is also a number for start and end values. Units can be "px" or any other valid unit.
+        <pre>addrule("#element","attribute","height",10,100,"px",'value',0,100);</pre>
+    <h3>Check type, check start and check end.</h3>
+    <p>There are 2 check types - percent and value. Value corresponds to the position of the scrollbar in pixels on the screen. Percent corresponds to percentage scrolled on the screen.</p>
+    <hr>
+    <h2>Triggers</h2>
+    <pre>addtrigger(&lt;function>,&lt;direction>,&lt;check_type>,&lt;check_point>);</pre>
+    Eg.
+      <pre> addtrigger(function(){$("#text").html("And night");},"down","value",900);</pre>
+    <p>Function contains code that has to be executed at check point.</p>
+    <p>Direction ("up"/"down") specifies if we it is to be triggered when we scroll up or down</p>
+    <p>Check type and Check point are same as rule check. Type can be percent or value.</p>
+
+      <a href='index.html'>Go back</a>
   </body>
