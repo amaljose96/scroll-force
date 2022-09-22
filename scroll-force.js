@@ -98,7 +98,7 @@ function scroll_manager(){
           }
         }
         $("#the-scroll").height(scroll_max+screen.height);
-        if(nav)
+        
         if(y<lower_bound){
           inbounds=0;
         }
